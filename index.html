@@ -26,28 +26,31 @@
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3>Week 2</h3>
-        <p>First chart shows the total IMF Credit Outstanding from 1984 to 2022.</p>
+        <h3>Week 1</h3>
+        <p>First chart shows the cummulative goals scored in home teams compared to away teams</p>
         <div class="chart" id="Chart1"></div>
 
         <h3></h3>
-        <p>Second chart looks at the number of goals scored from premiur league teams when they were at there home stadium</p>
+        <p>Second chart looks at the goals scored by home teams in premiur league</p>
         <div class="chart" id="Chart2"> </div>
+
+        <h3>Week 2</h3>
+        <p>First chart shows the total IMF Credit Outstanding from 1984 to 2022</p>
+        <div class="chart" id="Chart3"> </div>
     </div> 
 </body>
 
 
 <script>
     //Define charts:
-    var Chart1 = "IMFlending.json";
+    var Chart1 = "chartFootball1.json";
     var Chart2 = "chartFootball2.json";
+    var Chart3 = "IMFlending.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', Chart1);
     vegaEmbed('#Chart2', Chart2);
+    vegaEmbed('#Chart3', Chart3);
 </script>
 
 </html>
-
-
-
