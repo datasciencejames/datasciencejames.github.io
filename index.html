@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -27,12 +27,12 @@
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
-        <h3>Covid-19</h3>
-        <p>The first chart tracks Covid-20 cases by UK region.</p>
+        <h3>Football</h3>
+        <p>The first chart shows the cummlative goals scored by football teams when they are at their home stadium compared to away stadium.</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Productivity puzzle</h3>
-        <p>My second chart looks at productivity in the UK</p>
+        <h3></h3>
+        <p>My second chart looks at the number of goals scored from premiur league teams when they were at there home stadium</p>
         <div class="chart" id="Chart2"> </div>
     </div> 
 </body>
@@ -40,8 +40,8 @@
 
 <script>
     //Define charts:
-    var myChart1 = "chart1_covidUKRegions.json";
-    var myChart2 = "chart2_ukProductivity.json";
+    var myChart1 = "chartFootball1.json";
+    var myChart2 = "chartFootball2.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -49,5 +49,4 @@
 </script>
 
 </html>
-
 
