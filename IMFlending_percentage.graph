@@ -2,7 +2,7 @@
 
   "title": {
       "text": "IMF lending outstanding",
-      "subtitle":"Credit outstanding to all members as a percentage of global GDP, %, Source: IMF, World Bank",
+      "subtitle":"Credit outstanding to all members as a percentage of global GDP(%), Source: IMF, World Bank",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
