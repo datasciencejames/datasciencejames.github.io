@@ -39,6 +39,9 @@
         <h2>Week 2</h2>
         <p>First chart shows the total IMF Credit Outstanding from 1984 to 2022</p>
         <div class="chart" id="ChartIMFlending"> </div>
+        
+        <p>Second chart shows the total IMF Credit Outstanding from 1984 to 2022 according to Financial Times</p>
+        <div class="chart" id="ChartIMFlending_FT"> </div>
     </div> 
 </body>
 
@@ -48,11 +51,13 @@
     var myChart1 = "chartFootball1.json";
     var myChart2 = "chartFootball2.json";
     var myChartIMFlending = "IMFlending.graph";
+    var myChartIMFlending_FT = "IMFlending_FT.graph";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#ChartIMFlending', myChartIMFlending);
+    vegaEmbed('#ChartIMFlending_FT', myChartIMFlending_FT);
 </script>
 
 </html>
