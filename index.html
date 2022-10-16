@@ -45,6 +45,14 @@
         <div class="chart" id="ChartIMFlendingpercentage"> </div>
         
         <p>(Looking at the second graph, 1984 is more riskier than 2022, therefore 1984 is the most "risky" year in terms of IMF lending.)</p>
+        
+    </div>
+    <div class="myWeek3">
+        <h2>Week 3</h2>
+        <h3>Daily gilt strip yields</h3>
+        
+        <div class="chart" id="ChartDailyyields"> </div>
+       
     </div> 
     </div> 
 </body>
@@ -56,12 +64,14 @@
     var myChart2 = "chartFootball2.json";
     var myChartIMFlendingoriginal = "IMFlending_original.graph";
     var myChartIMFlendingpercentage = "IMFlending_percentage.graph";
+    var myChartDailyyields = "Daily_yields.graph";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#ChartIMFlendingoriginal', myChartIMFlendingoriginal);
     vegaEmbed('#ChartIMFlendingpercentage', myChartIMFlendingpercentage);
+    vegaEmbed('#ChartDailyyields', myChartDailyyields);
 </script>
 
 </html>
