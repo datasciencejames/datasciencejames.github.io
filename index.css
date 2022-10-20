@@ -48,3 +48,29 @@ h1, h2, h3, p{
     background-color: rgb(67, 255, 255);
 } 
     
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: rgb(67, 255, 255);
+    width:330px;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(67, 255, 255);
+
+
+.myWeek3{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+} 
+    
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: rgb(67, 255, 255);
+    width:330px;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(67, 255, 255);
+    
