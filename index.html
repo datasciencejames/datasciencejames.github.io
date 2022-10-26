@@ -51,7 +51,10 @@
         <h2>Week 3</h2>
         <h3>Covid cases</h3>
         <p>This chart represents new Covid cases in daily basis</p>
-        <div class="chart" id="ChartCovidcases"> </div>
+        <div class="chart" id="ChartCovidcasesbar"> </div>
+        
+        <p>This is the modified chart which shows the data in line graph</p>
+        <div class="chart" id="ChartCovidcasesline"> </div>
        
     </div> 
     <div class="myWeek4">
@@ -89,14 +92,16 @@
     var myChart2 = "chartFootball2.json";
     var myChartIMFlendingoriginal = "IMFlending_original.graph";
     var myChartIMFlendingpercentage = "IMFlending_percentage.graph";
-    var myChartCovidcases = "Covid_cases.graph";
+    var myChartCovidcasesbar = "Covid_cases_bar.graph";
+    var myChartCovidcasesline = "Covid_cases_line.graph";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#ChartIMFlendingoriginal', myChartIMFlendingoriginal);
     vegaEmbed('#ChartIMFlendingpercentage', myChartIMFlendingpercentage);
-    vegaEmbed('#ChartCovidcases', myChartCovidcases);
+    vegaEmbed('#ChartCovidcasesbar', myChartCovidcasesbar);
+    vegaEmbed('#ChartCovidcasesline', myChartCovidcasesline);
 </script>
 
 </html>
