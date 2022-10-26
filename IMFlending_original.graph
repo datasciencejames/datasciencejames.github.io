@@ -11,8 +11,8 @@
   "data":{"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/IMFlending_clean.csv"},
     
   
-  "height": 300,
-  "width": 340,
+  "height": 200,
+  "width": 300,
 
   "mark": {
     "type": "bar",
