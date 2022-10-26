@@ -9,9 +9,10 @@
         "color": "black"},
   
   "description": "Elite Ice Hockey League team ranking",
-  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/rank.json"},
+  "data": {"values":[{"Team Ranking": "1 Guildford Flames", "Games Played": 11, "Points": 19, "Wins": 8, "Losses": 1}, {"Team Ranking": "2 Sheffield Steelers", "Games Played": 10, "Points": 15, "Wins": 7, "Losses": 2}, {"Team Ranking": "3 Cardiff Devils", "Games Played": 9, "Points": 14, "Wins": 6, "Losses": 2}, {"Team Ranking": "4 Coventry Blaze", "Games Played": 11, "Points": 14, "Wins": 4, "Losses": 4}, {"Team Ranking": "5 Manchester Storm", "Games Played": 9, "Points": 9, "Wins": 3, "Losses": 4}, {"Team Ranking": "6 Belfast Giants", "Games Played": 6, "Points": 8, "Wins": 4, "Losses": 2}, {"Team Ranking": "7 Dundee Stars", "Games Played": 10, "Points": 7, "Wins": 3, "Losses": 6}, {"Team Ranking": "8 Nottingham Panthers", "Games Played": 8, "Points": 6, "Wins": 1, "Losses": 5}, {"Team Ranking": "9 Fife Flyers", "Games Played": 9, "Points": 5, "Wins": 2, "Losses": 6}, {"Team Ranking": "10 Glasgow Clan", "Games Played": 9, "Points": 3, "Wins": 0, "Losses": 6}]},
   
   "height": 200,
+  "width": 300, 
   "mark": "bar",
   "encoding": {
     "y": {
