@@ -11,7 +11,7 @@
   "description": "Elite Ice Hockey League team ranking",
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/rank.json"},
   
-  "height": {"step": 20},
+  "height": 200,
   "mark": "bar",
   "encoding": {
     "y": {
