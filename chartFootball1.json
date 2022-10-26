@@ -27,7 +27,7 @@
       {"op": "sum","field": "stats.away_score", "as": "Away"}],
       "sort": [{"field":"match_start", "order":"ascending"}]}],
 
-  "height":300,
+  "height":200,
   "width":300,         
 
   "encoding": {"x": {"field": "match_start", "type": "temporal","title":null}},
