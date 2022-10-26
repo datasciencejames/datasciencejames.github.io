@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Elite Ice Hockey League team ranking",
+  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/rank.json"},
+  
+  "height": {"step": 17},
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Team Ranking",
+      "type": "ordinal",
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Points",
+      "type":"quantitative",
+      
+    }
+  }
+}
