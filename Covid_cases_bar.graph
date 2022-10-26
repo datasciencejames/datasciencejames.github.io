@@ -13,6 +13,7 @@
     
   },
   "height": 200,
+  "width": 300,
   "mark": "bar",
   "encoding": {
     "x": {"field": "date", "type": "temporal"},
