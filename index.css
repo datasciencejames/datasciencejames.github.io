@@ -68,6 +68,17 @@ h1, h2, h3, p{
     border-radius: 10px;
     border-color: rgb(60,20,200);
 } 
+
+.myWeek5{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(60,20,200);
+} 
     
 /* Set the apperance of the class, chart */
 .chart{
