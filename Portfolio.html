@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Data science Portfolio.</h1>
+        
+        <h2>Week 1</h2>
+        <h3>Football</h3>
+        <p>First chart shows the cummulative goals scored in home teams compared to away teams</p>
+        <div class="chart" id="Chart1"></div>
+
+        <p>Second chart looks at the goals scored by home teams in premiur league</p>
+        <div class="chart" id="Chart2"> </div>
+        
+    </div>
+    
+    <div class="myWeek2">
+        <h2>Week 2</h2>
+        <h3>IMF Credit Outstanding</h3>
+        <p>First chart shows the total IMF Credit Outstanding from 1984 to 2022</p>
+        <div class="chart" id="ChartIMFlendingoriginal"> </div>
+        
+        <p>Second chart shows the total IMF Credit Outstanding from 1984 to 2022 as a percentage of global GDP</p>
+        <div class="chart" id="ChartIMFlendingpercentage"> </div>
+        
+        <p>(Looking at the second graph, 1984 is more riskier than 2022, therefore 1984 is the most "risky" year in terms of IMF lending.)</p> </div>
+        
+    </div>
+ 
+    
+    <div class="myWeek3">
+        <h2>Week 3</h2>
+        <h3>Covid cases</h3>
+        <p>This chart represents new Covid cases in daily basis</p>
+        <div class="chart" id="ChartCovidcasesbar"> </div>
+        
+        <p>This is the modified chart which shows the data in line graph</p>
+        <div class="chart" id="ChartCovidcasesline"> </div>
+        
+        <p> I changed a bar graph to a line graph which shows the data more clearly and more readable. </p>
+       
+    </div> 
+   
+    
+    <div class="myWeek4">
+        <h2>Week 4</h2>
+        <h3>Elite Ice Hockey League (EIHL) </h3>
+        <p>This chart displays the ranking of EIHL teams</p>
+        <div class="chart" id="ChartEIHLranking"> </div>
+        <p>Here is the google collab python <a href="https://github.com/datasciencejames/RDeconomist.github.io/blob/main/Week_4_Homework.ipynb"target="_blank"> note </a>.</p>
+     
+    </div> 
+    
+    <div class="myWeek5">
+        <h2>Week 5</h2>
+        <h3>ONS API </h3>
+        <p>I used looping to generate several graphs (containing massive amount of data) easily. 
+            Here is the google colab <a href="https://github.com/datasciencejames/RDeconomist.github.io/blob/main/Week5_HW.ipynb"target="_blank"> code</a>.
+        There were no public sector provisions and pensions during the period.</p>
+        <div class="chart" id="ChartANRH"> </div>
+        <div class="chart" id="ChartCPNX"> </div>
+        <div class="chart" id="ChartCWP2"> </div>
+        <div class="chart" id="ChartJW39"> </div>
+        <div class="chart" id="ChartMF6V"> </div>
+        <div class="chart" id="ChartMF76"> </div>
+        <div class="chart" id="ChartMU73"> </div>
+        <div class="chart" id="ChartNMBJ"> </div>
+        <div class="chart" id="ChartRUUM"> </div>
+    </div> 
+           
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chartFootball1.json";
+    var myChart2 = "chartFootball2.json";
+    var myChartIMFlendingoriginal = "IMFlending_original.graph";
+    var myChartIMFlendingpercentage = "IMFlending_percentage.graph";
+    var myChartCovidcasesbar = "Covid_cases_bar.graph";
+    var myChartCovidcasesline = "Covid_cases_line.graph";
+    var myChartEIHLranking = "EIHL_ranking.json";
+    var myChartANRH = "HW5_ANRH.json";
+    var myChartCPNX = "HW5_CPNX.json";
+    var myChartCWP2 = "HW5_CWP2.json";
+    var myChartJW39 = "HW5_JW39.json";
+    var myChartMF6V = "HW5_MF6V.json";
+    var myChartMF76 = "HW5_MF76.json";
+    var myChartMU73 = "HW5_MU73.json";
+    var myChartNMBJ = "HW5_NMBJ.json";
+    var myChartRUUM = "HW5_RUUM.json";
+    
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#ChartIMFlendingoriginal', myChartIMFlendingoriginal);
+    vegaEmbed('#ChartIMFlendingpercentage', myChartIMFlendingpercentage);
+    vegaEmbed('#ChartCovidcasesbar', myChartCovidcasesbar);
+    vegaEmbed('#ChartCovidcasesline', myChartCovidcasesline);
+    vegaEmbed('#ChartEIHLranking', myChartEIHLranking);
+    vegaEmbed('#ChartANRH', myChartANRH);
+    vegaEmbed('#ChartCPNX', myChartCPNX);
+    vegaEmbed('#ChartCWP2', myChartCWP2);
+    vegaEmbed('#ChartJW39', myChartJW39);
+    vegaEmbed('#ChartMF6V', myChartMF6V);
+    vegaEmbed('#ChartMF76', myChartMF76);
+    vegaEmbed('#ChartMU73', myChartMU73);
+    vegaEmbed('#ChartNMBJ', myChartNMBJ);
+    vegaEmbed('#ChartRUUM', myChartRUUM);
+</script>
+
+</html>
