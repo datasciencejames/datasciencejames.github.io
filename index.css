@@ -47,12 +47,6 @@ h1, h2, h3, p{
     align-items: center;
     justify-content: center;
 }
-a{
-    border: 5px;
-    border-color: black;
-    border-style: solid;
-    margin: auto;
-}
 
 .link:hover{
 
