@@ -20,7 +20,50 @@ h1, h2, h3, p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+/*Buttons*/
+
+.link{
+    background-color: rgba(132, 180, 230, 0.5);
+
+    padding:10px;
     
+    border:2px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:white;
+    text-decoration: none;
+}
+.wrap{
+    display: block;
+    margin: auto;
+   }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+}
+
+.link:hover{
+
+    background-color: rgba(68, 116, 237, 0.821);
+
+    border:2px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
