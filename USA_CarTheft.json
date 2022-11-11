@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+
+
+  "width":700,
+  "height":400,
+  "title": {"text": "Car theft in the USA",
+    "subtitle":["Crimes per 100k population. Source: FBI"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitlePadding":5,
+    "anchor": "middle",
+    "color": "black"
+  },
+
+  "data": {
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/geo_US_states.json",
+    "format":{"property": "features"}
+  },
+
+  "projection": {
+    "type": "albersUsa"
+  },
+
+"transform": [
+    {
+    "lookup":"properties.NAME",
+
+    "from":{
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/US_states_CrimeWide.csv"},
+        "key":"State",
+        "fields":["Motor Vehicle Theft", "Robbery", "Burglary"]
+        }
+    }
+    ],
+
+  "mark":{
+    "type": "geoshape",
+    "stroke":"darkgrey",
+    "strokeWidth":1},
+
+  "encoding":{
+    "color":{
+        "field":"Motor Vehicle Theft",
+        "type": "quantitative"
+    },
+
+"tooltip":[
+    {"field":"properties.NAME", "type":"nominal", "title":"State"},
+    {"field":"Motor Vehicle Theft", "title": "Crimes"},
+    {"field":"Burglary", "title": "Burglary"},
+    {"field":"Robbery", "title": "Robbed"}
+  ]
+  }
+  }
