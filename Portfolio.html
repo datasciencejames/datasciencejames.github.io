@@ -103,6 +103,16 @@
         <div class="chart" id="ChartNMBJ"> </div>
         <div class="chart" id="ChartRUUM"> </div>
     </div> 
+    
+     <div class="myWeek7">
+        <h2>Week 7</h2>
+        <h3>Maps </h3>
+        <p>The first World map is the base map</p>
+        <div class="chart" id="Chartbasemap"> </div>
+         
+        <p>The second map shows the data of countries that I am going to use in my dissertation. The data represents the economic growth rate from 1960 to 1985.</p>  
+        <div class="chart" id="Chartchoroplethmap"> </div>
+    </div> 
            
 </body>
 
@@ -125,6 +135,8 @@
     var myChartMU73 = "HW5_MU73.json";
     var myChartNMBJ = "HW5_NMBJ.json";
     var myChartRUUM = "HW5_RUUM.json";
+    var myChartbasemap = "base_map.json";
+    var myChartchoroplethmap = "choropleth_map.json";
     
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -143,6 +155,8 @@
     vegaEmbed('#ChartMU73', myChartMU73);
     vegaEmbed('#ChartNMBJ', myChartNMBJ);
     vegaEmbed('#ChartRUUM', myChartRUUM);
+    vegaEmbed('#Chartbasemap', myChartbasemap);
+    vegaEmbed('#Chartchoroplethmap', myChartchoroplethmap);
 </script>
 
 </html>
