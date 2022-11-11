@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+
+
+  "width":500,
+  "height":300,
+  "title": {"text": "World map",
+    "subtitle":[],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitlePadding":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+
+  "data": {
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/World_map.json",
+    "format":{"property": "features"}
+  },
+
+  "projection": {
+    "type": "mercator"
+  },
+
+
+  "mark":{
+    "type": "geoshape",
+    "fill": "lightblue",
+    "stroke":"darkblue",
+    "strokeWidth":0.5},
+
+  "encoding":{
+"tooltip":[
+    {"field":"properties.sovereignt", "type":"nominal", "title":"Country"}
+  ]
+  }
+  }
