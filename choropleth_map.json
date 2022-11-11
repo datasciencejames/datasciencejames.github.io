@@ -5,7 +5,7 @@
   "width":500,
   "height":300,
   "title": {"text": "World map",
-    "subtitle":[],
+    "subtitle":["Growth rate from 1960 to 1985(%), Data source: Summers and Heston"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
@@ -26,7 +26,7 @@
     "lookup":"properties.sovereignt",
 
     "from":{
-        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/growth%20rate%201960-1985.csv"},
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/g60-85.csv"},
         "key":"country",
         "fields":["growth rate"]
         }
@@ -36,11 +36,14 @@
 
   "mark":{
     "type": "geoshape",
-    "fill": "lightblue",
     "stroke":"darkblue",
     "strokeWidth":0.5},
 
   "encoding":{
+     "color":{
+        "field":"growth rate",
+        "type": "quantitative"
+    },
 "tooltip":[
     {"field":"properties.sovereignt", "type":"nominal", "title":"Country"},
     {"field":"growth rate", "title": "growth rate"}
