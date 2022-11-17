@@ -113,6 +113,16 @@
         <p>The second map shows the data of countries that I am going to use in my dissertation. The data represents the economic growth rate from 1960 to 1985.</p>  
         <div class="chart" id="Chartchoroplethmap"> </div>
     </div> 
+     <div class="myWeek8">
+        <h2>Week 8</h2>
+        <h3>Economic Festival </h3>
+        <p>The lecturer argued that one of the tasks that should be done by data scientists is to make raw datasets understandable and accessible to low-incomers to improve the data literacy.</p>
+        <div class="chart" id="ChartICTgraduate"> </div>
+        <p> The first bar graph represents the share of students who have graduated Bachelor's degree in ICT field. The figures imply that a lot of people are not familiar with handling datasets in an effective way which are taught in the University especially in the field of ICT.</p>  
+         
+        <div class="chart" id="ChartICTincome"> </div>
+        <p>The second bar graph represents the ICT access and usage by households of EU-28 countries classified into income quartiles. The figures show that there is a considerable difference between Q1 and Q4 which indicates that there are still households (in the low income group) that appeal difficulty in accessing and comprehending the datasets </p>  
+    </div> 
            
 </body>
 
@@ -137,7 +147,10 @@
     var myChartRUUM = "HW5_RUUM.json";
     var myChartbasemap = "base_map.json";
     var myChartchoroplethmap = "choropleth_map.json";
-    
+    var myChartICTgraduate = "ICT_graduate.json";
+    var myChartICTincome = "ICT_income.json";
+   
+     
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
@@ -157,6 +170,8 @@
     vegaEmbed('#ChartRUUM', myChartRUUM);
     vegaEmbed('#Chartbasemap', myChartbasemap);
     vegaEmbed('#Chartchoroplethmap', myChartchoroplethmap);
+    vegaEmbed('#ChartICTgraduate', myChartICTgraduate);
+    vegaEmbed('#ChartICTincome', myChartICTincome);
 </script>
 
 </html>
