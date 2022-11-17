@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title":{"text":"Share of Bachelor's graduates by field of ICT in 2019",
+  "fontSize":"12",
+  "subtitle":"Source: OECD, Values presented as %",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":"10",
+  "anchor": "middle",
+  "baseline":"middle"},
+  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/ICTgraduate_Bachelor's.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Value", "type": "quantitative"}
+  },
+  "width":"300",
+  "height":"300"
+}
