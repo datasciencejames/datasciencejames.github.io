@@ -58,6 +58,50 @@ h1, h2, h3, p{
     
 }
 
+.aim{ 
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(60,20,200);
+}
+
+.data{ 
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(60,20,200);
+}
+
+.challenge{ 
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(60,20,200);
+}
+
+.conclusion{ 
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(67, 255, 255);
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(60,20,200);
+}
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
