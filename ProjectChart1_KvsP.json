@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "title":{
+    "text":"GDP per capita: Korea vs Philippines",
+    "subtitle": "Source: World Bank",
+    "subtitleFont":"italic",
+    "subtitleFontSize":"10",
+    "anchor": "start"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/GDP_KvsP.csv"},
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Country", "type": "nominal"}
+  }
+}
