@@ -10,6 +10,8 @@
   },
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/GDP_KvsP.csv"},
   "mark": "line",
+  "height":200,
+  "width":300,
   "encoding": {
     "x": {"field": "Year", "type": "temporal"},
     "y": {"field": "Value", "type": "quantitative"},
