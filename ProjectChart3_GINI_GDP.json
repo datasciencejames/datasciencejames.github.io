@@ -17,10 +17,11 @@
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/World_map.json",
     "format":{"property": "features"}
   },
+
   "params": [
     {
       "name": "Year",
-      "value": 2019,
+      "value": 1960,
       "bind": {
         "input": "range",
         "min": 1960,
@@ -38,7 +39,7 @@
     "lookup":"properties.sovereignt",
 
     "from":{
-        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/GINI_GDP_API.csv"},
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Final_API_GDP_GINI.csv"},
         "key":"Country",
         "fields":["GDP per capita","GINI"]
         }
