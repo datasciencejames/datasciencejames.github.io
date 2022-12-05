@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/wine.csv"
+  },
+
+"title": {
+    "text": "Wines by Cultivars",
+    "subtitle": "Source: Forina, M. et al",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "mark": {"type": "circle"},
+  "width": 300,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Variable 1",
+      "title": "Dimension 1",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Variable 2",
+      "title": "Dimension 2",
+      "type": "quantitative"
+    },
+    "color": {"field": "Cultivars", "title": "Cultivars","type": "ordinal"}
+  }
+}
