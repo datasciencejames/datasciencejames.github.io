@@ -123,6 +123,14 @@
         <div class="chart" id="ChartICTincome"> </div>
         <p>The second bar graph represents the ICT access and usage by households of EU-28 countries classified into income quartiles. The figures show that there is a considerable difference between Q1 and Q4 which indicates that there are still households (in the low income group) that appeal difficulty in accessing and comprehending the datasets </p>  
     </div> 
+    
+     <div class="myWeek9">
+        <h2>Week 9</h2>
+        <h3>Machine Learning </h3>
+        <p>I performed classification(supervised learning) and Dimensionality Reduction (Unsupervised learning) using the wine data. Here is the google collab <a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/wine.ipynb"target="_blank"> note   </p>
+        <div class="chart" id="Chartwine"> </div>
+       
+    </div> 
            
 </body>
 
@@ -149,6 +157,7 @@
     var myChartchoroplethmap = "choropleth_map.json";
     var myChartICTgraduate = "ICT_graduate.json";
     var myChartICTincome = "ICT_income.json";
+    var myChartwine = "wine.json";
    
      
     // Embed charts:
@@ -172,6 +181,7 @@
     vegaEmbed('#Chartchoroplethmap', myChartchoroplethmap);
     vegaEmbed('#ChartICTgraduate', myChartICTgraduate);
     vegaEmbed('#ChartICTincome', myChartICTincome);
+    vegaEmbed('#Chartwine', myChartwine);
 </script>
 
 </html>
