@@ -8,7 +8,7 @@
     "subtitleFontSize":"10",
     "anchor": "start"
   },
-  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/GDP_KvsP.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Korea%20vs%20philippines/GDP_KvsP.csv"},
   "mark": "line",
   "height":200,
   "width":300,
