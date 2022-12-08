@@ -8,7 +8,7 @@
   "subtitleFontSize":"10",
   "anchor": "middle",
   "baseline":"middle"},
-  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/ICT%20Access_Income%20Quantile.csv"
+  "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%208/ICT%20Access_Income%20Quantile.csv"
   },
   "mark": "bar",
   "encoding": {
