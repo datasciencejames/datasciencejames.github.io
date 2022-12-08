@@ -14,7 +14,7 @@
   },
 
   "data": {
-    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%207/World_map.json",
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Map/World_map_project.json",
     "format":{"property": "features"}
   },
 
@@ -39,7 +39,7 @@
     "lookup":"properties.sovereignt",
 
     "from":{
-        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Final_API_GDP_GINI.csv"},
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Map/Final_API_GDP_GINI.csv"},
         "key":"Country",
         "fields":["GDP per capita","GINI"]
         }
