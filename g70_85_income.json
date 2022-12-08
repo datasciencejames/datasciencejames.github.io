@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+   "data": {
+    "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/g70_85.csv",
+    "format": {"type": "csv"}
+  },
+
+ "title": {
+    "text": "Growth based on Income inequality: 1970-1985",
+    "subtitle": "Source: World Bank",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start"
+  },
+  
+ "height": 300,
+ "width": 400,
+
+"layer": [
+{"mark": {"type": "point", "size": 40, "color": "lightblue"},
+
+"encoding": {
+    "x": {
+      "field": "gini70_income",
+      "type": "quantitative",
+      "title": "Gini", 
+      "scale":{"domain":[0.29, 0.7]}
+    },
+    "y": {
+      "field": "g70-85",
+      "type": "quantitative",
+      "title": "Growth rate"
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "country"},
+      {"field": "gini70_income", "type": "quantitative", "title": "Gini"},
+      {"field": "g70-85", "type": "quantitative", "title": "Growth rate" }
+      ]}},
+
+      {"mark": {
+        "type": "line",
+        "color":"#218fb8", "size": 3},
+      "transform":[
+        {
+          "regression": "g70-85",
+          "on": "gini70_income"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "gini70_income",
+          "type": "quantitative"
+         
+        },
+        "y": {
+          "field": "g70-85",
+          "type": "quantitative"
+        }
+      }
+    }
+    ]
+}
