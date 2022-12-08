@@ -26,7 +26,7 @@
     "lookup":"properties.sovereignt",
 
     "from":{
-        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/g60-85.csv"},
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%207/growth%20rate%201960-1985.csv"},
         "key":"country",
         "fields":["growth rate"]
         }
