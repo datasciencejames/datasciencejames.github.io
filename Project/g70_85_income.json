@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
    "data": {
-    "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/g70_85.csv",
+    "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/g70_85_income.csv",
     "format": {"type": "csv"}
   },
 
