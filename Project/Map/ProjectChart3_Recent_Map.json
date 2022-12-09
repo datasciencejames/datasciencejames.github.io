@@ -1,11 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
-
+"description": "I used the data from 2020 and nearest years' data for the gini",
 
   "width":500,
   "height":300,
-  "title": {"text": "World map",
-    "subtitle":["Growth rate from 1960 to 1985(%), Data source: Summers and Heston"],
+  "title": {"text": "How the world look today",
+    "fontSize": 15,
+    "subtitle":[ "Source: World Bank"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
