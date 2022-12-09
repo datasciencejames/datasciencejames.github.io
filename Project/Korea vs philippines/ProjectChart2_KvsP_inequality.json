@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Used 1960 data for the Gini coefficient and 1980 data for the top 10% income share",
+  "description": "I couldnt fin",
 
   "title":{
     "text":"Initial income ineqaulity indices in Korea and Philippines",
@@ -10,13 +10,16 @@
     "subtitlePadding":10,
     "anchor": "start"
   },
+   "height":200,
+  "width":300,
   "data": {
     "values": [
-      {"Country":"Korea", "Indicator": "Gini", "value":0.32},
+      {"Country":"Korea", "Indicator": "Income gini", "value":0.3365},
+      {"Country":"Korea", "Indicator": "Land gini", "value":0.38},
       {"Country":"Korea", "Indicator": "Top 10% share", "value":0.27},
-      {"Country":"Philippines", "Indicator": "Gini", "value":0.513},
-      {"Country":"Philippines", "Indicator": "Top 10% share", "value":0.49},
-      
+      {"Country":"Philippines", "Indicator": "Income gini", "value":0.513},
+      {"Country":"Philippines", "Indicator": "Land gini", "value":0.53},
+      {"Country":"Philippines", "Indicator": "Top 10% share", "value":0.49}
     ]
   },
   "mark": "bar",
