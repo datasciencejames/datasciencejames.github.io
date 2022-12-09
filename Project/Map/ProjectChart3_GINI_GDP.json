@@ -15,22 +15,9 @@
 
   "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%207/World_map.json",
-    "format":{"property": "features"}
+    "format": {"property": "features"}
   },
 
-  "params": [
-    {
-      "name": "Year",
-      "value": 1960,
-      "bind": {
-        "input": "range",
-        "min": 1960,
-        "max": 2021,
-        "step": 1,
-        "name": "Select the year:"
-      }
-    }
-  ],
   "projection": {
     "type": "mercator"
   },
@@ -39,9 +26,9 @@
     "lookup":"properties.sovereignt",
 
     "from":{
-        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Map/Final_API_GDP_GINI.csv"},
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Map/Gini_GDP_recent.csv"},
         "key":"Country",
-        "fields":["GDP per capita","GINI"]
+        "fields":["GDP","Gini"]
         }
     }
     ],
@@ -54,13 +41,14 @@
 
   "encoding":{
      "color":{
-        "field":"GDP per capita",
-        "type": "quantitative"
+        "field":"GDP",
+        "type": "quantitative",
+         "scale": {"scheme": "tealblues"}
     },
 "tooltip":[
     {"field":"properties.sovereignt", "type":"nominal", "title":"Country"},
-    {"field":"GDP per capita", "title": "GDP per capita"},
-    {"field":"GINI", "title": "GINI"}
+    {"field":"GDP", "title": "GDP"},
+    {"field":"Gini", "title": "Gini"}
   ]
   }
   }
