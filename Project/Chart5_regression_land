@@ -18,7 +18,7 @@
  "width": 300,
 
 "layer": [
-{"mark": {"type": "point", "size": 40, "color": "lightblue"},
+{"mark": {"type": "point", "size": 40, "color": "#2ebdff"},
 
 "encoding": {
     "x": {
