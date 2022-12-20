@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Used linear filling function in excel for the missing values of Gini coefficient",
+  "title": {
+    "text": "GDP in R&D and the Gini index in USA",
+    "subtitle": [
+      "Data Sources: FRED"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+    "height": 200,
+    "width": 300,
+
+   "layer": [
+   {
+     "data": {
+      "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/FRED_R%26D.json",
+      "format": {"type": "json", "property": "observations"}
+    },
+      "mark": {"type": "line", "color": "#218fb8","size":3
+},
+      "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "R&D GDP ($)",
+        "axis": {
+            "titleColor": "#218fb8",
+            "labelFontSize": 10,
+            "titleFontSize": 15
+          }
+      }
+   }
+   },
+   {
+     "data": {
+          "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/USA_GINI.csv"
+        },
+        
+     "mark": {
+        "type": "line", "color": "#2ebdff", "size":3
+      },
+         "encoding": {
+      "y": {
+        "field": "Gini",
+        "type": "quantitative",
+        "title": "Gini index",
+        "axis": {"titleColor": "#2ebdff", "titleFontSize": 15}
+      },
+      "x": {
+        "field": "DATE",
+        "type": "temporal",
+        "title": "",
+        "axis": {"grid": false}
+      }
+    }
+   }
+   ],
+   
+    "resolve": {"scale": {"y": "independent"}}
+   }
