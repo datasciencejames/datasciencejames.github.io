@@ -12,8 +12,8 @@
     "color": "black"
   },
 
-    "height": 300,
-    "width": 400,
+    "height": 200,
+    "width": 300,
 
    "layer": [
    {
@@ -21,7 +21,8 @@
       "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/FRED_R%26D.json",
       "format": {"type": "json", "property": "observations"}
     },
-      "mark": {"type": "line", "color": "blue"},
+      "mark": {"type": "line", "color": "#218fb8","size":3
+},
       "encoding": {
       "x": {
         "field": "date",
@@ -32,7 +33,7 @@
         "type": "quantitative",
         "title": "R&D GDP ($)",
         "axis": {
-            "titleColor": "blue",
+            "titleColor": "#218fb8",
             "labelFontSize": 10,
             "titleFontSize": 15
           }
@@ -45,14 +46,14 @@
         },
         
      "mark": {
-        "type": "line", "color": "skyblue"
+        "type": "line", "color": "#2ebdff", "size":3
       },
          "encoding": {
       "y": {
         "field": "Gini",
         "type": "quantitative",
         "title": "Gini index",
-        "axis": {"titleColor": "skyblue", "titleFontSize": 15}
+        "axis": {"titleColor": "#2ebdff", "titleFontSize": 15}
       },
       "x": {
         "field": "DATE",
