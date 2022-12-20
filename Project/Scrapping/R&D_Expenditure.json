@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title":{
+    "text":"Research and Development expenditure",
+    "subtitle":"Source:Wikipedia",
+    "subtitleFont": "italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "subtitlePadding": 3,
+    },
+
+    
+    
+  "data": {
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Scrapping/R%26D_Expenditure.csv" 
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Expenditure(billions of USD)", "type": "quantitative","axis": {"grid": false}},
+    "y": {"field": "Country", "type": "nominal","sort": "-x"}
+    }
+    }
