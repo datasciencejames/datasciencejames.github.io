@@ -4,7 +4,7 @@
   "title":{
     "text":"Research and Development expenditure",
     "subtitle":"Source:Wikipedia",
-    "subtitleFont": "italic",
+    "subtitleFontStyle": "italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "subtitlePadding": 3,
@@ -15,9 +15,11 @@
   "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Scrapping/R%26D_Expenditure.csv" 
   },
-  "mark": "bar",
+  "mark": {"type":"bar", "color":"#218fb8"},
   "encoding": {
-    "x": {"field": "Expenditure(billions of USD)", "type": "quantitative","axis": {"grid": false}},
-    "y": {"field": "Country", "type": "nominal","sort": "-x"}
-    }
+    "x": {"field": "Expenditure(billions of USD)", "type": "quantitative","axis": {"grid": false},"title":"billions(USD)"},
+    "y": {"field": "Country", "type": "nominal","sort": "-x","title":""}
+    },
+  "height":200,
+  "width":300
     }
