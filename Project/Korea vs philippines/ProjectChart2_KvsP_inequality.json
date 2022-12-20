@@ -5,7 +5,7 @@
   "title":{
     "text":"Initial income ineqaulity indices in Korea and Philippines",
     "subtitle":"Source:World Bank, World Inequality Database",
-    "subtitleFont":"italic",
+    "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
     "anchor": "start"
@@ -25,8 +25,8 @@
   "mark": "bar",
   "encoding": {
     "x": {"field": "Indicator"},
-    "y": {"field": "value", "type": "quantitative"},
+    "y": {"field": "value", "type": "quantitative","axis": {"grid": false}},
     "xOffset": {"field": "Country"},
-    "color": {"field": "Country"}
+    "color": {"field": "Country","scale":{"scheme": "tealblues"}}
   }
 }
