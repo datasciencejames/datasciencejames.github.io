@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+"description": "I used the data from 2020 and nearest years' data for the gini",
+
+  "width":500,
+  "height":300,
+  "title": {"text": "How the world look today",
+    "fontSize": 15,
+    "subtitle":[ "Source: World Bank"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitlePadding":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+
+  "data": {
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%207/World_map.json",
+    "format": {"property": "features"}
+  },
+
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+    "lookup":"properties.sovereignt",
+
+    "from":{
+        "data":{"url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Map/Gini_GDP_recent.csv"},
+        "key":"Country",
+        "fields":["GDP","Gini"]
+        }
+    }
+    ],
+
+
+  "mark":{
+    "type": "geoshape",
+    "stroke":"darkblue",
+    "strokeWidth":0.5},
+
+  "encoding":{
+     "color":{
+        "field":"GDP",
+        "type": "quantitative",
+         "scale": {"scheme": "tealblues"}
+    },
+"tooltip":[
+    {"field":"properties.sovereignt", "type":"nominal", "title":"Country"},
+    {"field":"GDP", "title": "GDP"},
+    {"field":"Gini", "title": "Gini"}
+  ]
+  }
+  }
