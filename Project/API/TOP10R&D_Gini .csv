@@ -1,0 +1,48 @@
+,Year,Gini,Country
+2,2019,41.5,United States
+3,2018,41.4,United States
+4,2017,41.2,United States
+5,2016,41.1,United States
+6,2015,41.2,United States
+7,2014,41.5,United States
+8,2013,40.7,United States
+52,2019,38.2,China
+53,2018,38.5,China
+54,2017,39.1,China
+55,2016,38.5,China
+56,2015,38.6,China
+57,2014,39.2,China
+58,2013,39.7,China
+108,2013,32.9,Japan
+152,2019,35.7,India
+153,2018,34.6,India
+154,2017,35.9,India
+155,2016,34.8,India
+156,2015,34.7,India
+203,2018,31.7,Germany
+204,2017,31.2,Germany
+205,2016,31.6,Germany
+206,2015,31.6,Germany
+207,2014,30.9,Germany
+208,2013,31.5,Germany
+255,2016,31.4,"Korea, Rep."
+257,2014,31.2,"Korea, Rep."
+303,2018,32.4,France
+304,2017,31.6,France
+305,2016,31.9,France
+306,2015,32.7,France
+307,2014,32.3,France
+308,2013,32.5,France
+354,2017,35.1,United Kingdom
+355,2016,34.8,United Kingdom
+356,2015,33.2,United Kingdom
+357,2014,34,United Kingdom
+358,2013,33.2,United Kingdom
+401,2020,36,Russian Federation
+402,2019,37.7,Russian Federation
+403,2018,37.5,Russian Federation
+404,2017,37.2,Russian Federation
+405,2016,36.8,Russian Federation
+406,2015,37.7,Russian Federation
+407,2014,39.9,Russian Federation
+408,2013,40.9,Russian Federation
