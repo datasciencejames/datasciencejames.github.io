@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+    "layer": [{
+       "data": {
+    "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/TOP10R%26D_Gini%20.csv" 
+  },
+  "height":200,
+  "width":400,
+      "layer": [{
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
+          "y": {"field": "Gini", "type": "quantitative"}
+        }
+      }, {
+        "mark": "bar",
+        "transform": [
+          {"filter": "datum.Value >= 35.4"},
+          {"calculate": "35.4", "as": "baseline"}
+        ]   
+      }
+    ]}, {
+      "data": {
+         "values": [{}]
+      },
+      "encoding": {
+        "y": {"datum": 35.4}
+      },
+      "layer": [{
+        "mark": "rule"
+      }, {
+        "mark": {
+          "type": "text",
+        
+          "baseline": "bottom",
+          "dx": 50,
+          "dy": 6,
+          "x": "width",
+          "width":20,
+          "text": "World Average Gini"
+        }
+      }]
+    }
+  ]
+}
