@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "I couldnt fin",
+  "description": "I tried to find Korea's Gini index in  1960",
 
   "title":{
     "text":"Initial income ineqaulity indices in Korea and Philippines",
@@ -24,7 +24,7 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Indicator"},
+    "x": {"field": "Indicator","axis": {"labelAngle": 0}},
     "y": {"field": "value", "type": "quantitative","axis": {"grid": false}},
     "xOffset": {"field": "Country"},
     "color": {"field": "Country","scale":{"scheme": "tealblues"}}
