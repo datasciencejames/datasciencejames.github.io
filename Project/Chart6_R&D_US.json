@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Used linear filling function in excel for the missing values of Gini coefficient",
+  "description": "Used FRED API. Used linear filling function in excel for the missing values of Gini coefficient",
   "title": {
     "text": "Research and Development GDP and the Gini index in USA",
     "subtitle": [
