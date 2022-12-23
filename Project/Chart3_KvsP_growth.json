@@ -11,7 +11,7 @@
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Korea%20vs%20philippines/GDP_KvsP.csv"},
   "mark": {"type": "line","size":3},
   "height":300,
-  "width":500,
+  "width":400,
   "encoding": {
     "x": {"field": "Year", "type": "temporal","title":"","axis": {"grid": false}},
     "y": {"field": "Value", "type": "quantitative", "title":"Per capita GDP","axis": {"grid": false}},
