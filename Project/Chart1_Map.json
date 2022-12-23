@@ -4,6 +4,7 @@
 
   "width":500,
   "height":300,
+  "background":"rgb(67, 255, 255)",
   "title": {"text": "How the world look today",
     "fontSize": 15,
     "subtitle":[ "Source: World Bank"],
