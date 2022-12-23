@@ -14,7 +14,13 @@
     "anchor": "middle",
     "color": "black"
   },
-
+  
+"config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
+  
   "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%207/World_map.json",
     "format": {"property": "features"}
