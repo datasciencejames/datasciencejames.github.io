@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "",
+  "description": "Scraped data from Wikipedia",
   "title":{
     "text":"Top 10 countries in R&D expenditures",
     "subtitle":"Source:Wikipedia",
