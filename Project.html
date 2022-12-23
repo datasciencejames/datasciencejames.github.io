@@ -41,13 +41,16 @@
     
     <div class="aim">
         <h1>Aim of the project</h1>
-         <p> The aim of this project is to examine the relationship between inequality and growth in an economic perspective. <br>
-	The main questions that will be considered are:<br>
-	1. Does the increase in income inequality hinders economic growth? <br>
-	2. Does any other inequality hinders economic growth? <br>
-	3. Does economic growth worsen the inequality? <br>
-	4. Will the poorer economies tend to grow faster than richer economies? <br>
-        
+         <p>The aim of this project is to examine the relationship between inequality and growth. <br>
+            To thoroughly investigate the relationship, I tried to look at various time periods <br>
+	    in various countries around the world.</p> 
+         
+         <p>Specifically, I aimed to depict charts under three different themes. In the first theme,<br>
+	    I tried to focus on how the inequality affects the economic growth in two countries: Korea<br>
+            and Philippines. In the second theme, I attempted to inspect the relationship between<br>
+            inequality and growth rate more precisely by using datasets from several countries and<br>
+	    performing regressions using them. For the last theme, I aimed to survey how economic<br>
+	    growth, derived by technological advancement, has impacted the income inequality. </p>    
         
     </div>
 	
@@ -65,11 +68,7 @@
 	    <div class="chart" id="Chart5"> </div>
 	    
 	    <h2> Theme 3. How technological advancement affects income inequality</h2> 
-	    
-	    <h3> Argument 1: Technological advancement increases inequality</h3>
 	    <div class="chart" id="Chart6"> </div>
-	    
-	    <h3> Argument 2: Technological advancement does not significantly affect inequality</h3>
 	    <div class="chart" id="Chart7"> </div>
 	    <div class="chart" id="Chart8"> </div>
         
@@ -77,20 +76,73 @@
     </div>
     
     <div class="data">
+	    
         <h1>Data used</h1>
+	    
+	 <h2>Chart 1:</h2> 
+	 <p>Datasets for GDP and Gini index are collected from the World Bank. I used Excel to sort<br>
+	    the countries and years that I want to look at. I used the most recent data available.<br>
+	    Looking at the map, the level of GDP in each country is distinguished using a color <br>
+	    scheme and Gini index is shown using the “tooltip” feature in Vega-lite.</p>
+	 
+	 <h2>Chart 2,3 (Theme 1):</h2> 
+	 <p>The datasets are from World Bank and WID except for the Korea’s Gini index in Chart 2.<br>
+	    Korea’s Gini index is scraped from Kang’s (2001) paper using Camelot and Pandas (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart2_Korea_income_gini.ipynb"target="_blank">Colab note </a>).<br> 
+	    I converted the per capita GDP dataset into long form using Stata which was originally<br> 
+	    in wide form for Chart 3. </p>
+	    
+	    <h2>Chart 4,5(Theme 2):</h2>
+	 <p>Datasets for the regressions were collected from four different papers written by Fields<br>
+	    (1989), Jain (1975), Taylor and Hudson (1972), and Summers-Heston (1984). I collected GDP<br>
+	    data in 1960 and 1985 to calculate the growth rate using the relevant formula in Excel. For<br>
+	    the regressions, I used Matplotlib in Google Collaboratory and regression feature in Vega<br> 
+	    -lite to present the graphs (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart4%2C5_Regression_project.ipynb"target="_blank">Colab note </a>).</p>
+	    
+	    <h2>Chart 6, 7, 8(Theme 3): </h2>
+	 <p>I used FRED API to collect dataset for GDP in Research and Development (R&D) sector and<br> 
+	    Gini index of USA in Chart 6. I used “For” looping to get both GDP and Gini in a JSON form<br>
+	   (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart6_FRED_R%26D_GINI.ipynb"target="_blank">Colab note </a>). Because the scale of GDP and Gini were different, I plotted two y-axes<br> 
+	    using Vega-lite. For the missing Gini values, I used linear filling function in Excel. In <br>
+	    Chart 7, I scraped top 10 countries from Wikipedia who had the most R&D expenditures in <br>
+	    recent years (mostly in 2019) using BeautifulSoup. Also, I used “If-else” statement and <br>
+	    “For” looping to only scrape the part I needed (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart7_R%26D_Expenditure.ipynb"target="_blank">Colab note </a>). Then, in Chart 8, I used World<br>
+	    Bank API to collect the Gini data for these 10 countries (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart8_Top10R%26D_Gini.ipynb"target="_blank">Colab note </a>). I added the world <br>
+	    average Gini baseline to compare these countries with the other parts of the world (I averaged<br> 
+		 all the Gini coefficient in 2020 using Excel to get the world average Gini).</p> 
+
+
+	    
         
         
     </div>
     
        <div class="challenge">
         <h1>Challenges during data cleaning process</h1>
+         <p>There were not many challenges in terms of data cleaning since there were many resources <br>
+	    available on the internet that I could refer to. However, there were two major challenges <br>
+	    which was kind of time consuming. First, when depicting the map, the names of some countries<br> 
+	    in the dataset did not match the names in the base map, in which, some part of the map did <br>
+	    not appear. For example, in the World Bank dataset, Russia was written as “Russian Federation”.<br> 
+	    To solve this problem, I used “matching” command in Excel to find out the mismatching countries.<br> 
+	    Secondly, the data for Gini index was insufficient especially for the older time periods. In <br>
+	    order to fill the missing values, I scraped the old papers that contained the missing values <br>
+	    or manually typed it in. If there were still missing values, I used the linear filling function <br>
+		 in Excel.</p> 
         
         
     </div>
     
        <div class="conclusion">
         <h1>Conclusion</h1>
-        
+         <p>Looking at the charts, it can be concluded that inequality impedes the growth. Reversely, growth<br>
+	    derived from technological advancement may deepen the inequality, but it is not always the case.<br>
+	    Charts in theme 1 indicates that the more inequal the country is, the less likely the country will<br> 
+	    grow. Charts in theme 2 demonstrates that inequality is negatively correlated to growth. Charts in<br>
+	    theme 3 shows two points of view. Chart 6 implies that R&D (I assumed R&D as an index for<br>
+	    technological advancement) fosters growth and increases inequality. Whereas chart 7 and 8 implies<br> 
+	    that there is no significant causation between R&D and inequality. (To prove that there is a <br>
+	    certain relationship, the Gini index of the top 10 countries should be significantly high than<br> 
+		 the World average. But this is not the case.)</p>    
         
     </div>
     
