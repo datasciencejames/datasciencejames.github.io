@@ -12,6 +12,7 @@
   },
    "height":300,
   "width":400,
+  "background":"rgb(67, 255, 255)",
   "data": {
     "values": [
       {"Country":"Korea", "Indicator": "Income gini", "value":0.3365},
