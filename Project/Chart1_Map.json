@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
-"description": "I used the data from 2020 and nearest years' data for the gini",
+"description": "The gini index data used are from 2020. For the missing values, I filled with the nearest years' gini index",
 
   "width":500,
   "height":300,
