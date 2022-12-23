@@ -11,7 +11,7 @@
         "mark": "bar",
         "encoding": {
           "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
-          "y": {"field": "Gini", "type": "quantitative"}
+          "y": {"field": "Gini", "type": "quantitative","axis": {"grid": false}}
         }
       }, {
         "mark": "bar",
