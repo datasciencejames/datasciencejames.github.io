@@ -2,19 +2,19 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title":{
-    "text":"GDP per capita: Korea vs Philippines",
+    "text":"GDP growth trends in Korea and Philippines",
     "subtitle": "Source: World Bank (current $USD)",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":"10",
+    "subtitleFontSize":10,
     "anchor": "start"
   },
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Korea%20vs%20philippines/GDP_KvsP.csv"},
   "mark": {"type": "line","size":3},
-  "height":200,
-  "width":300,
+  "height":300,
+  "width":500,
   "encoding": {
-    "x": {"field": "Year", "type": "temporal","axis": {"grid": false}},
-    "y": {"field": "Value", "type": "quantitative", "title":"","axis": {"grid": false}},
+    "x": {"field": "Year", "type": "temporal","title":"","axis": {"grid": false}},
+    "y": {"field": "Value", "type": "quantitative", "title":"Per capita GDP","axis": {"grid": false}},
     "color": {"field": "Country", "type": "nominal",
   "scale":{"scheme": "tealblues"}}
 }}
