@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "I used the sort feature in excel to get data from Korea and Philippines and used statista to convert the wide form (which is the default dataframe form of World Bank) to long form ",
   "title":{
-    "text":"GDP growth trends in Korea and Philippines",
+    "text":"Chart 3: GDP growth trends in Korea and Philippines",
     "subtitle": "Source: World Bank (current $USD)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -25,4 +25,5 @@
     "y": {"field": "Value", "type": "quantitative", "title":"Per capita GDP","axis": {"grid": false}},
     "color": {"field": "Country", "type": "nominal",
   "scale":{"scheme": "tealblues"}}
-}}
+}
+}
