@@ -11,7 +11,7 @@
     "anchor": "start"
   },
    "height":300,
-  "width":500,
+  "width":400,
   "data": {
     "values": [
       {"Country":"Korea", "Indicator": "Income gini", "value":0.3365},
