@@ -1,17 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
-"description": "The gini index data used are from 2020. For the missing values, I filled with the nearest years' gini index",
+
 
   "width":500,
   "height":300,
   "background":"rgb(67, 255, 255)",
-  "title": {"text": "How the world look today",
+  "title": {"text": "Chart 1: How the world look today",
     "fontSize": 15,
     "subtitle":[ "Source: World Bank"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
-    "anchor": "middle",
+    "anchor": "start",
     "color": "black"
   },
   
