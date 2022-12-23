@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
+"description": "Used the Gini data from Fields(1989) and Jain (1975) and GDP data from Summers-Heston (1984). Calculated the growth rate between 1960 and 1985 using excel",
    "data": {
     "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Regression/g60_85_income.csv",
     "format": {"type": "csv"}
