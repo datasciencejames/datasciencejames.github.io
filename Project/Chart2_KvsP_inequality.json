@@ -10,9 +10,18 @@
     "subtitlePadding":10,
     "anchor": "start"
   },
-   "height":300,
+  
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
+  
+  "height":300,
   "width":400,
+  
   "background":"rgb(67, 255, 255)",
+  
   "data": {
     "values": [
       {"Country":"Korea", "Indicator": "Income gini", "value":0.3365},
