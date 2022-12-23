@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "I averaged the gini data from all countries in 2020 to calculate the world average gini",
+  "description": "Used World Bank API. Averaged the gini data from all countries in 2020 using excel to calculate the world average gini",
   "title":{
     "text":"Gini index of Top 10 Countries ",
     "subtitle":"Source:World Bank",
