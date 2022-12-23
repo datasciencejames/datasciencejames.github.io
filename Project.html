@@ -50,6 +50,21 @@
         
         
     </div>
+	
+    <div class="data">
+    <h1>Charts</h1>
+	    
+	    <div class="chart" id="Chart1"> </div>
+	    <div class="chart" id="Chart2"> </div>
+	    <div class="chart" id="Chart3"> </div>
+	    <div class="chart" id="Chart4"> </div>
+	    <div class="chart" id="Chart5"> </div>
+	    <div class="chart" id="Chart6"> </div>
+	    <div class="chart" id="Chart7"> </div>
+	    <div class="chart" id="Chart8"> </div>
+        
+        
+    </div>
     
     <div class="data">
         <h1>Data used</h1>
@@ -70,4 +85,30 @@
     </div>
     
     </body>
+	
+	<script>
+    //Define charts:
+    var myChart1 = "Project/Chart1_Map.json";
+    var myChart2 = "Project/Chart2_KvsP_inequality.json ";
+    var myChart3 = "Project/Chart3_KvsP_growth.json";
+    var myChart4 = "Project/Chart4_regression_income.json";
+    var myChart5 = "Project/Chart5_regression_land.json";
+    var myChart6 = "Project/Chart6_R&D_US.json";
+    var myChart7 = "Project/Chart7_TOP10R&D_expenditure.json";
+    var myChart8 = "Project/Chart8_TOP10R&D_Gini.json";
+    
+   
+     
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+   
+</script>
+	
 </html>
