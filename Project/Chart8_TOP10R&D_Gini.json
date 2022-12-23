@@ -1,14 +1,22 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "",
+  "description": "I averaged the gini data from all countries in 2020 to calculate the world average gini",
+  "title":{
+    "text":"Gini index of Top 10 Countries ",
+    "subtitle":"Source:World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "subtitlePadding": 3},
+
     "layer": [{
        "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/TOP10R%26D_Gini%20.csv" 
   },
-  "height":200,
-  "width":400,
+  "height":300,
+  "width":500,
       "layer": [{
-        "mark": "bar",
+        "mark": {"type":"bar", "color":"#74a1b8"},
         "encoding": {
           "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
           "y": {"field": "Gini", "type": "quantitative","axis": {"grid": false}}
@@ -28,7 +36,7 @@
         "y": {"datum": 35.4}
       },
       "layer": [{
-        "mark": "rule"
+        "mark": {"type":"rule","size":3,"color":"#1c799a"}
       }, {
         "mark": {
           "type": "text",
