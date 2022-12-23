@@ -1,17 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "I tried to find Korea's Gini index in  1960",
+  "description": "I could not find Korea's Gini index in  1960s in World Bank or WID so I scrapped it from a pdf paper: Kang (2001) ",
 
   "title":{
-    "text":"Initial income ineqaulity indices in Korea and Philippines",
-    "subtitle":"Source:World Bank, World Inequality Database",
+    "text":"Ineqaulity indices in Korea and Philippines in 1960s-1970s",
+    "subtitle":"Source:World Bank, World Inequality Database, Kang (2001)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
     "anchor": "start"
   },
-   "height":200,
-  "width":300,
+   "height":300,
+  "width":500,
   "data": {
     "values": [
       {"Country":"Korea", "Indicator": "Income gini", "value":0.3365},
@@ -24,8 +24,8 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Indicator","axis": {"labelAngle": 0}},
-    "y": {"field": "value", "type": "quantitative","axis": {"grid": false}},
+    "x": {"field": "Indicator","axis": {"labelAngle": 0},"title":""},
+    "y": {"field": "value", "type": "quantitative","title":"", "axis": {"grid": false}},
     "xOffset": {"field": "Country"},
     "color": {"field": "Country","scale":{"scheme": "tealblues"}}
   }
