@@ -8,6 +8,8 @@
     "subtitleFontSize":10,
     "anchor": "start",
     "subtitlePadding": 3},
+  
+  "background":"rgb(67, 255, 255)",
 
     "layer": [{
        "data": {
