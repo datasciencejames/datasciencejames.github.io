@@ -14,7 +14,7 @@
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/API/TOP10R%26D_Gini%20.csv" 
   },
   "height":300,
-  "width":500,
+  "width":400,
       "layer": [{
         "mark": {"type":"bar", "color":"#74a1b8"},
         "encoding": {
