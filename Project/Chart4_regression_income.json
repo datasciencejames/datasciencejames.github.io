@@ -16,7 +16,14 @@
   
  "height": 500,
  "width": 500,
+  
  "background":"rgb(67, 255, 255)",
+  
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
 
 "layer": [
 {"mark": {"type": "point", "size": 30, "color": "#2ebdff"},
