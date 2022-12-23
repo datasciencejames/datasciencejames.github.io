@@ -8,14 +8,14 @@
 
  "title": {
     "text": "Growth based on Income inequality: 1960-1985",
-    "subtitle": "Source: World Bank",
+    "subtitle": "Source:  Fields (1989), Jain (1975), Summers-Heston (1984)  ",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start"
   },
   
- "height": 300,
- "width": 300,
+ "height": 500,
+ "width": 500,
 
 "layer": [
 {"mark": {"type": "point", "size": 30, "color": "#2ebdff"},
@@ -24,13 +24,13 @@
     "x": {
       "field": "gini60_income",
       "type": "quantitative",
-      "title": "Gini", 
+      "title": "Gini Index", 
       "scale":{"domain":[0.29, 0.7]}
     },
     "y": {
       "field": "g60-85",
       "type": "quantitative",
-      "title": "Growth rate"
+      "title": "GDP growth rate"
     },
     "tooltip": [
       {"field": "country", "type": "nominal", "title": "country"},
