@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
+"description": "Used land gini from Taylor and Hudson (1972) and calculated growth rate same as in the previous regression",
    "data": {
     "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Regression/g60_85_land.csv",
     "format": {"type": "csv"}
