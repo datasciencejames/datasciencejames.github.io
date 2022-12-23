@@ -11,6 +11,12 @@
     "anchor": "start",
     "color": "black"
   },
+  
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
 
     "height": 300,
     "width": 400,
