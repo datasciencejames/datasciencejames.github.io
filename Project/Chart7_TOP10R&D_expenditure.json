@@ -11,6 +11,12 @@
     },
 
     "background":"rgb(67, 255, 255)",
+  
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
     
   "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Scrapping/R%26D_Expenditure.csv" 
