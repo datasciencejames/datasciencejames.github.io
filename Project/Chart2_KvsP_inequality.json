@@ -3,8 +3,8 @@
   "description": "I could not find Korea's Gini index in  1960s in World Bank or WID so I scrapped it from a pdf paper: Kang (2001) ",
 
   "title":{
-    "text":"Ineqaulity indices in Korea and Philippines in 1960s-1970s",
-    "subtitle":"Source:World Bank, World Inequality Database, Kang (2001)",
+    "text":"Chart 2: Ineqaulity indices in Korea and Philippines in 1960s-1970s",
+    "subtitle":"Source:World Bank, World Inequality Database(WID), Kang (2001)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitlePadding":10,
