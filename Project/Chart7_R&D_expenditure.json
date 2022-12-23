@@ -2,12 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
   "title":{
-    "text":"Research and Development expenditure",
+    "text":"Top 10 countries in R&D expenditures",
     "subtitle":"Source:Wikipedia",
     "subtitleFontStyle": "italic",
     "subtitleFontSize":10,
     "anchor": "start",
-    "subtitlePadding": 3,
+    "subtitlePadding": 3
     },
 
     
@@ -15,11 +15,11 @@
   "data": {
     "url":"https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Project/Scrapping/R%26D_Expenditure.csv" 
   },
-  "mark": {"type":"bar", "color":"#218fb8"},
+  "mark": {"type":"bar", "color":"#74a1b8"},
   "encoding": {
     "x": {"field": "Expenditure(billions of USD)", "type": "quantitative","axis": {"grid": false},"title":"billions(USD)"},
     "y": {"field": "Country", "type": "nominal","sort": "-x","title":""}
     },
-  "height":200,
-  "width":300
+  "height":300,
+  "width":500
     }
