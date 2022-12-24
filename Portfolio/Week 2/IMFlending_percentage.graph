@@ -9,6 +9,12 @@
       "color": "black"},
   
   "data":{"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%202/IMFlending_clean.csv"},
+
+  "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
     
   
   "height": 200,
@@ -16,7 +22,7 @@
 
   "mark": {
     "type": "bar",
-    "color": "rgb(0,47,167"},
+    "color": "#218fb8"},
 
 "encoding": {
      "x": {
@@ -26,7 +32,7 @@
          "title": null,
          "grid": false,
          "ticks": false,
-         "labelAngle": 45}},
+         "labelAngle": 0}},
 
       "y": {
         "field": "as a %",
