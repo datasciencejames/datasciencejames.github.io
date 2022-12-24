@@ -2,9 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=1980",
+  
   "format":{
     "type": "json",
     "property": "data"}},
+
+"background":"rgb(67, 255, 255)",
 
     "title": {
     "text": "Premiership - home advantage?",
@@ -29,8 +32,14 @@
 
   "height":200,
   "width":300,         
+   "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
+  
 
-  "encoding": {"x": {"field": "match_start", "type": "temporal","title":null}},
+  "encoding": {"x": {"field": "match_start", "type": "temporal","title":null,"axis": {"grid": false}}},
 
   "layer":[
 
@@ -40,7 +49,7 @@
        "y": {"field": "Home", "type": "quantitative","title":null},
         "color": {
         "datum": "Home",
-            "scale": {"range": ["green", "blue"]},
+           "scale":{"scheme": "tealblues"},
             "legend":{
               "orient": "top-left",
               "fillColor":"white"}}}},
@@ -49,7 +58,7 @@
     {"mark": {"type":"circle", "size":100},
      
      "encoding": {
-       "y": {"field": "Away", "type": "quantitative","title":null},
+       "y": {"field": "Away", "type": "quantitative","title":null,"axis": {"grid": false}},
       "color": {"datum": "Away"}}}
      ]
 }
