@@ -7,6 +7,12 @@
     "property": "data"
   }
   },
+  
+  "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
 
     "title": {
     "text": "Premiership - goals",
@@ -24,7 +30,7 @@
 
   "mark": {
     "type":"bar",
-    "color":"rgb(0,67,167)"},
+    "color":"#218fb8"},
 
   "height":100,
   "width":150,
@@ -40,12 +46,14 @@
     "x": {
       "field": "match_start", 
       "type": "temporal",
-      "title":null},
+      "title":null,
+      "axis": {"grid": false}},
 
     "y": {
       "field": "stats.home_score", 
       "type": "quantitative",
-      "title":null},
+      "title":null,
+      "axis": {"grid": false}},
 
      "facet":{
        "field": "home_team.name",
