@@ -14,9 +14,16 @@
   },
   "height": 200,
   "width": 300,
-  "mark": "bar",
+  "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
+   "mark": {
+    "type": "bar",
+    "color": "#218fb8"},
   "encoding": {
-    "x": {"field": "date", "type": "temporal"},
-    "y": {"field": "cases", "type": "quantitative"}
+    "x": {"field": "date", "type": "temporal","title":"","axis": {"grid": false}},
+    "y": {"field": "cases", "type": "quantitative","axis": {"grid": false}}
   }
 }
