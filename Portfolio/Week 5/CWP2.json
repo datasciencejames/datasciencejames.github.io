@@ -9786,9 +9786,14 @@
 },
 "height": 250,
     "width": 300,
+    "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
     "mark": "line",
     "encoding": {
-      "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0},"title": ""},
+      "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0,"grid": false},"title": ""},
       "y": {"field": "value", "type": "quantitative", "title": "£m"}
       
     }
