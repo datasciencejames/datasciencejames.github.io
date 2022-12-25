@@ -7087,9 +7087,14 @@
 "height": 250,
     "width": 300,
     "mark": "line",
+     "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
     "encoding": {
-      "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0},"title": ""},
-      "y": {"field": "value", "type": "quantitative", "title": "£m"}
+      "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0,"grid": false},"title": ""},
+      "y": {"field": "value", "type": "quantitative", "title": "£m","axis": {"grid": false}}
       
     }
   }
