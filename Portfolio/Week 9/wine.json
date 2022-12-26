@@ -12,6 +12,11 @@
     "anchor": "start",
     "color": "black"
   },
+   "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
 
   "mark": {"type": "circle"},
   "width": 300,
@@ -20,13 +25,16 @@
     "x": {
       "field": "Variable 1",
       "title": "Dimension 1",
-      "type": "quantitative"
+      "type": "quantitative",
+       "axis": {"grid": false}
     },
     "y": {
       "field": "Variable 2",
       "title": "Dimension 2",
-      "type": "quantitative"
+      "type": "quantitative",
+       "axis": {"grid": false}
     },
-    "color": {"field": "Cultivars", "title": "Cultivars","type": "ordinal"}
+    
+    "color": {"field": "Cultivars", "title": "Cultivars","type": "ordinal","scale":{"scheme": "tealblues"}}
   }
 }
