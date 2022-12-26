@@ -2,19 +2,24 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
   "title":{"text":"ICT Access and Usage by Households for EU-28 in 2019",
-  "fontSize":"12",
+  "fontSize":12,
   "subtitle":"Source: OECD",
   "subtitleFontStyle":"italic",
-  "subtitleFontSize":"10",
+  "subtitleFontSize":10,
   "anchor": "middle",
   "baseline":"middle"},
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%208/ICT%20Access_Income%20Quantile.csv"
   },
-  "mark": "bar",
+  "mark": {"type":"bar","color":"#218fb8"},
+   "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
   "encoding": {
     "x": {"field": "Income quantile", "type": "ordinal", "axis": {"labelAngle": 0}},
-    "y": {"field": "Value", "type": "quantitative"}
+    "y": {"field": "Value", "type": "quantitative", "axis": {"grid": false}}
   },
-  "width":"200",
-  "height":"300"
+  "width":200,
+  "height":300
 }
