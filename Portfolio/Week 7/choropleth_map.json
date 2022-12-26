@@ -38,11 +38,14 @@
     "type": "geoshape",
     "stroke":"darkblue",
     "strokeWidth":0.5},
+     "background":"rgb(67, 255, 255)",
+  
 
   "encoding":{
      "color":{
         "field":"growth rate",
-        "type": "quantitative"
+        "type": "quantitative",
+        "scale":{"scheme": "tealblues"}
     },
 "tooltip":[
     {"field":"properties.sovereignt", "type":"nominal", "title":"Country"},
