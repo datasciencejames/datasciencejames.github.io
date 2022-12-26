@@ -5,16 +5,21 @@
   "fontSize":"12",
   "subtitle":"Source: OECD, Values presented as %",
   "subtitleFontStyle":"italic",
-  "subtitleFontSize":"10",
+  "subtitleFontSize":10,
   "anchor": "middle",
   "baseline":"middle"},
   "data": {"url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%208/ICTgraduate_Bachelor's.csv"
   },
-  "mark": "bar",
+  "mark": {"type": "bar","color":"#218fb8"},
+   "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
   "encoding": {
     "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
-    "y": {"field": "Value", "type": "quantitative"}
+    "y": {"field": "Value", "type": "quantitative","axis": {"grid": false}}
   },
-  "width":"300",
-  "height":"300"
+  "width":300,
+  "height":300
 }
