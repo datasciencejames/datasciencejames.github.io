@@ -13,16 +13,23 @@
   
   "height": 200,
   "width": 300, 
-  "mark": "bar",
+  "background":"rgb(67, 255, 255)",
+  "view": {
+     "stroke": "transparent"
+  }
+,
+  "mark": {"type":"bar","color":"#218fb8"},
   "encoding": {
     "y": {
       "field": "Team Ranking",
       "type": "ordinal",
-      "sort": "-x"
+      "sort": "-x",
+       "axis": {"grid": false}
     },
     "x": {
       "field": "Points",
       "type":"quantitative",
+      "axis": {"grid": false}
       
     }
   }
