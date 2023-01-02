@@ -126,10 +126,18 @@
     
      <div class="myWeek9">
         <h2>Week 9</h2>
-        <h3>Machine Learning </h3>
-        <p>I performed classification(supervised learning) and Dimensionality Reduction (Unsupervised learning) using the wine data. Here is the google collab <a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Portfolio/Week%209/wine.ipynb"target="_blank"> note   </p>
-        <div class="chart" id="Chartwine"> </div>
+        <h3>Advanced charts</h3>
+         <p> </p>
        
+    </div> 
+    
+    <div class="myWeek10">
+        <h2>Week 10</h2>
+        <h3>Machine Learning </h3>
+        <p>For the first chart, I performed classification(supervised learning) and Dimensionality Reduction (Unsupervised learning) using the wine data. Here is the google collab <a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Portfolio/Week%209/wine.ipynb"target="_blank"> note</a>   </p>
+        <div class="chart" id="Chartwine"> </div>
+        <p> For the second chart, I regressed the growth rate of several countries from 1960 to 1985 on the land distribution gini index. Here is the google collab <a herf="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Portfolio/Week%2010/regression.ipynb"target="_blank"> note </a> </p>
+        <div class="chart" id="Chartregression"> </div>
     </div> 
            
 </body>
@@ -157,7 +165,8 @@
     var myChartchoroplethmap = "Portfolio/Week 7/choropleth_map.json";
     var myChartICTgraduate = "Portfolio/Week 8/ICT_graduate.json";
     var myChartICTincome = "Portfolio/Week 8/ICT_income.json";
-    var myChartwine = "Portfolio/Week 9/wine.json";
+    var myChartwine = "Portfolio/Week 10/wine.json";
+    var myChartregression = "Portfolio/Week 10/Land_regression.json";
    
      
     // Embed charts:
@@ -182,6 +191,7 @@
     vegaEmbed('#ChartICTgraduate', myChartICTgraduate);
     vegaEmbed('#ChartICTincome', myChartICTincome);
     vegaEmbed('#Chartwine', myChartwine);
+    vegaEmbed('#Chartregression', myChartregression);
 </script>
 
 </html>
