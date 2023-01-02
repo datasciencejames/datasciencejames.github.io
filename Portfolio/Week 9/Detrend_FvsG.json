@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+             
+    "title": {
+            "text": "France vs Germany",
+            "subtitle":["GDP / predicted GDP / prediction error. Source: World Bank",""],
+            "subtitleFontStyle":"italic",
+            "subtitleFontSize":10,
+            "anchor": "start",
+            "color": "black"},
+            
+    "data": {
+            "url": "https://raw.githubusercontent.com/datasciencejames/datasciencejames.github.io/main/Portfolio/Week%209/Detrended_FvsG.csv"},
+    
+    "transform": [
+            {"fold":["france_error", "germany_error"], "as": ["measure", "value"]}
+            ],
+            
+        "height": 200,
+        "width": 200,   
+         "background": "rgb(67, 255, 255)",
+  "view": {"stroke": "transparent"},
+    
+        "mark": {   
+                "type":"bar",
+                "color":"#218fb8",
+                "point":true,
+                "strokeWidth":1},    
+        
+        "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "temporal",
+                    "title":null,
+                    "axis":{"grid": false}},
+        
+                "y": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "title": null,
+                    "axis": {"grid": false}},
+    
+                "facet": {
+                    "field": "measure",
+                    "columns": 2,
+                    "type": "nominal",
+                    "title": null}
+        },
+    "resolve": {"scale": {"y": "independent"}}
+    }
