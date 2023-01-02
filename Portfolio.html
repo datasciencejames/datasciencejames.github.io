@@ -129,6 +129,8 @@
         <h3>Advanced charts</h3>
          <p> The first chart compares the GDP in France and Germany using de-trended shock analysis</p>
           <div class="chart" id="Chartdetrend"> </div>
+         <p> The second chart shows the correlation between social protection and GDP in 2020 </p>
+         <div class="chart" id="Chartbubble"> </div>
        
     </div> 
     
@@ -170,6 +172,7 @@
     var myChartICTgraduate = "Portfolio/Week 8/ICT_graduate.json";
     var myChartICTincome = "Portfolio/Week 8/ICT_income.json";
     var myChartdetrend = "Portfolio/Week 9/Detrend_FvsG.json";
+    var myChartbubble = "Portfolio/Week 9/Social_protection&GDP.json";
     var myChartwine = "Portfolio/Week 10/wine.json";
     var myChartregression = "Portfolio/Week 10/Land_regression.json";
    
@@ -196,6 +199,7 @@
     vegaEmbed('#ChartICTgraduate', myChartICTgraduate);
     vegaEmbed('#ChartICTincome', myChartICTincome);
     vegaEmbed('#Chartdetrend', myChartdetrend);
+    vegaEmbed('#Chartbubble', myChartsbubble);
     vegaEmbed('#Chartwine', myChartwine);
     vegaEmbed('#Chartregression', myChartregression);
 </script>
