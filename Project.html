@@ -89,7 +89,7 @@
 	 <h2>Chart 2,3 (Theme 1):</h2> 
 	 <p>The datasets are from World Bank and WID except for the Korea’s Gini index in Chart<br>
 	    2. Korea’s Gini index is scraped from Kang’s (2001) paper using Camelot and Pandas <br> 
-	    (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart2_Korea_income_gini.ipynb"target="_blank">Colab note </a>). I converted the per capita GDP dataset into long form using Stata which<br> 
+	    (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart2_Korea_income_gini.ipynb"target="_blank">Colab note</a>). I converted the per capita GDP dataset into long form using Stata which<br> 
 	    was originally in wide form for Chart 3. </p>
 	    
 	    <h2>Chart 4,5(Theme 2):</h2>
@@ -97,18 +97,18 @@
 	    Fields (1989), Jain (1975), Taylor and Hudson (1972), and Summers-Heston (1984). I<br> 
 	    collected GDP data in 1960 and 1985 to calculate the growth rate using the relevant <br>
 	    formula in Excel. For the regressions, I used Matplotlib in Google Collaboratory and<br> 
-	    regression feature in Vega-lite to present the graphs (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart4%2C5_Regression_project.ipynb"target="_blank">Colab note </a>).</p>
+	    regression feature in Vega-lite to present the graphs (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart4%2C5_Regression_project.ipynb"target="_blank">Colab note</a>).</p>
 	    
 	    <h2>Chart 6, 7, 8(Theme 3): </h2>
 	 <p>I used FRED API to collect dataset for GDP in Research and Development (R&D)<br> 
 	    sector and Gini index of USA in Chart 6. I used “For” looping to get both GDP<br>
-	    and Gini in a JSON form(<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart6_FRED_R%26D_GINI.ipynb"target="_blank">Colab note </a>). Because the scale of GDP<br> 
+	    and Gini in a JSON form(<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart6_FRED_R%26D_GINI.ipynb"target="_blank">Colab note</a>). Because the scale of GDP<br> 
 	    and Gini were different, I plotted two y-axes using Vega-lite. For the missing<br>
 	    Gini values, I used linear filling function in Excel. In Chart 7, I scraped top 10<br> 
 	    countries from Wikipedia who had the most R&D expenditures in recent years (mostly <br>
 	    in 2019) using BeautifulSoup. Also, I used “If-else” statement and “For” looping to <br>
-	    only scrape the part I needed (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart7_R%26D_Expenditure.ipynb"target="_blank">Colab note </a>). Then, in Chart 8, I used <br>
-	    WorldBank API to collect the Gini data for these 10 countries (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart8_Top10R%26D_Gini.ipynb"target="_blank">Colab note </a>). I<br> 
+	    only scrape the part I needed (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart7_R%26D_Expenditure.ipynb"target="_blank">Colab note</a>). Then, in Chart 8, I used <br>
+	    WorldBank API to collect the Gini data for these 10 countries (<a href="https://github.com/datasciencejames/datasciencejames.github.io/blob/main/Project/Chart8_Top10R%26D_Gini.ipynb"target="_blank">Colab note</a>). I<br> 
 	    added the world average Gini baseline to compare these countries with the other parts 
 	    of the world (I averagedall the Gini coefficient in 2020 using Excel to get the world<br>
 	    average Gini).</p> 
@@ -125,12 +125,12 @@
 	    resources available on the internet that I could refer to. However, there were<br>
 	    two major challenges which was kind of time consuming. First, when depicting the<br> 
 	    map, the names of some countries in the dataset did not match the names in the<br>
-	    base map, in which, some part of the map didnot appear. For example, in the<br> 
-	    World Bank dataset, Russia was written as “Russian Federation”.To solve this<br> 
+	    base map, in which, some part of the map did not appear. For example, in the<br> 
+	    World Bank dataset, Russia was written as “Russian Federation”. To solve this<br> 
 	    problem, I used “matching” command in Excel to find out the mismatching<br>
-	    countries.Secondly, the data for Gini index was insufficient especially for the<br>
+	    countries. Secondly, the data for Gini index was insufficient especially for the<br>
 	    older time periods. In order to fill the missing values, I scraped the old <br>
-  	    papers that contained the missing valuesor manually typed it in. If there <br>
+  	    papers that contained the missing values or manually typed it in. If there <br>
             were still missing values, I used the linear filling function in Excel.</p> 
         
     </div>
@@ -141,12 +141,12 @@
 	    Reversely, growth derived from technological advancement may deepen the inequality,<br>
 	    but it is not always the case. Charts in theme 1 indicates that the more inequal<br> 
 	    the country is, the less likely the country will grow. Charts in theme 2 <br>
-	    demonstrates that inequality is negatively correlated to growth. Charts intheme 3<br>
+	    demonstrates that inequality is negatively correlated to growth. Charts in theme 3<br>
 	    shows two points of view. Chart 6 implies that R&D (I assumed R&D as an index for<br> 
 	    technological advancement) fosters growth and increases inequality. Whereas chart 7<br>
-	    and 8 impliesthat there is no significant causation between R&D and inequality. (To <br> 
+	    and 8 implies that there is no significant causation between R&D and inequality. (To <br> 
 	    prove that there is a certain relationship, the Gini index of the top 10 countries <br>    
-            should be significantly high thanthe World average. But this is not the case.)</p>
+            should be significantly high than the World average. But this is not the case.)</p>
     </div>
     
     </body>
